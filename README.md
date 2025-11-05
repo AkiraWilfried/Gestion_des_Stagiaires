@@ -220,77 +220,63 @@ export default defineConfig([
 
   ---
 
-  README mis à jour.
+  # Gestion des stagiaires
 
-  ## Besoin d'aide ?
+  Application front-end pour gérer des stagiaires (React + TypeScript + Vite).
 
-  Dites-moi quelles fonctionnalités vous souhaitez (champs du formulaire, validations, pages supplémentaires, export, etc.) et je peux générer les composants, les tests ou une CI de base.
+  Résumé
+
+  - Fonctionnalités : création / modification / listing des stagiaires, gestion des tâches, export PDF
+
+  Prérequis
+
+  - Node.js 18+ (recommandé)
+  - npm ou pnpm
+
+  Installation
+
+  ```powershell
+  git clone <url-du-depot>
+  cd "Gestion des Stagiaires"
+  npm install
+  ```
+
+  ou avec pnpm :
+
+  ```powershell
+  pnpm install
+  ```
+
+  Scripts utiles
+
+  - `npm run dev` — démarre Vite en développement
+  - `npm run build` — construit l'application (`tsc -b && vite build`)
+  - `npm run lint` — lance ESLint
+  - `npm run preview` — prévisualise la build
+
+  Utilisation rapide
+
+  ```powershell
+  npm run dev
+  ```
+
+  Ouvrez l'URL affichée par Vite (par défaut http://localhost:5173).
+
+  Structure du projet (extrait)
+
+  - `src/` : code source (components, lib, styles...)
+  - `public/` : assets
+  - fichiers de config : `package.json`, `tsconfig.json`, `vite.config.ts`
+
+  Export PDF
+
+  Le projet utilise `jspdf` et `jspdf-autotable` (voir `src/lib/export-pdf.ts`).
+
+  Contribution
+
+  - Forkez le dépôt, créez une branche `feature/*` ou `fix/*` et ouvrez une PR.
 
   ---
 
   README mis à jour.
 
-  ## Besoin d'aide ?
-
-  Dites-moi les fonctionnalités que vous souhaitez (champs du formulaire, validations, pages, export, etc.) et je peux générer les composants, tests ou une CI de base.
-
-  ---
-
-  README mis à jour.
-
-    - Ouvrir l'URL indiquée par Vite (par défaut `http://localhost:5173`).
-
-    ## Lint & tests
-
-    - Linter :
-
-    ```powershell
-    npm run lint
-    ```
-
-    - (Optionnel) Ajouter des tests avec Vitest ou Jest si nécessaire.
-
-    ## Export PDF
-
-    L'application contient des utilitaires pour exporter des listes en PDF (`jspdf`, `jspdf-autotable`) dans `src/lib/export-pdf.ts`.
-
-    ## Contribution
-
-    - Forkez le dépôt
-    - Créez une branche `feature/*` ou `fix/*`
-    - Ouvrez une Pull Request en décrivant vos changements
-
-    ## Idées d'améliorations
-
-    - Ajouter une API backend (Express, Fastify, ou Firebase)
-    - Ajouter authentification et gestion des rôles
-    - Tests unitaires et intégration
-    - Export CSV / Excel
-
-    ## Besoin d'aide ?
-
-    Dites-moi quelles fonctionnalités vous souhaitez (ex : champs du formulaire, validations, pages supplémentaires) et je peux générer les composants, tests ou une CI de base.
-
-    ---
-
-    Fichier README mis à jour.
-    - Forkez le dépôt
-    - Créez une branche feature/fix
-    - Ouvrez une Pull Request en décrivant les changements
-
-    Convention de nommage des branches : `feature/*`, `fix/*`, `chore/*`.
-
-    ## Idées d'améliorations
-
-    - Ajouter des tests unitaires et d'intégration (Vitest)
-    - Ajouter une API backend simple (Express / Fastify) ou utiliser Firebase
-    - Authentification / autorisations
-    - Export CSV / Excel
-
-    ## Aide & contact
-
-    Si vous avez besoin d'aide ou souhaitez des fonctionnalités spécifiques, indiquez ce que vous voulez changer ou ajouter (ex : pages, champs du formulaire, export PDF). Je peux aussi générer des templates de tests ou une CI simple.
-
-    ---
-
-    README mis à jour automatiquement.
